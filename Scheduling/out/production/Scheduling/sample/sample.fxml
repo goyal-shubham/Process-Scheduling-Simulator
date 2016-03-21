@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="CENTER" hgap="100.0" prefHeight="428.0" prefWidth="708.0" vgap="100.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <Label prefWidth="150.5" text="Process 1" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="50.0" right="100.0" top="-300.0" />
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="process1BurstTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="210.0" top="-300.0" />
+      </GridPane.margin>
+    </TextField>
+    <Label prefWidth="150.5" text="Process 2" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="50.0" right="100.0" top="-225.0" />
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="process2BurstTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="210.0" top="-225.0" />
+      </GridPane.margin>
+    </TextField>
+    <Label prefWidth="150.5" text="Process 3" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="50.0" top="-150.0" />
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="process3BurstTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="210.0" top="-150.0" />
+      </GridPane.margin>
+    </TextField>
+    <Label prefWidth="150.5" text="Process 4" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="50.0" top="-75.0" />
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="process4BurstTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="210.0" top="-75.0" />
+      </GridPane.margin>
+    </TextField>
+    <Label prefWidth="150.5" text="Process 5" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="50.0" />
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="process5BurstTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="210.0" />
+      </GridPane.margin>
+    </TextField>
+    <Button fx:id="getWaitingTimes" mnemonicParsing="false" text="Waiting Times" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="155.0" top="250.0" />
+      </GridPane.margin>
+    </Button>
+    <TextField fx:id="process1ArrivalTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="520.0" top="-300.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process2ArrivalTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="520.0" top="-225.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process3ArrivalTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="520.0" top="-150.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process4ArrivalTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="520.0" top="-75.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process5ArrivalTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="520.0" />
+      </GridPane.margin>
+    </TextField>
+    <Label text="Burst Time 1" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="200.0" top="-350.0" />
+      </GridPane.margin>
+    </Label>
+    <Label text="Arrival Time" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="500.0" top="-350.0" />
+      </GridPane.margin>
+    </Label>
+    <Label text="Priority" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="600.0" top="-350.0" />
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="process1Priority" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="600.0" top="-300.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process2Priority" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="600.0" top="-225.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process3Priority" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="600.0" top="-150.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process4Priority" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="600.0" top="-75.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process5Priority" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="600.0" />
+      </GridPane.margin>
+    </TextField>
+    <Button fx:id="getTurnAroundTimes" mnemonicParsing="false" text="Turn Around Times" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="150.0" top="170.0" />
+      </GridPane.margin>
+    </Button>
+    <Button fx:id="getStaticGanntChart" mnemonicParsing="false" text="Static Gannt Chart" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="330.0" top="170.0" />
+      </GridPane.margin>
+    </Button>
+    <Button fx:id="getDynamicGanntChart" mnemonicParsing="false" text="Dynamic Gannt Chart" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="330.0" top="250.0" />
+      </GridPane.margin>
+    </Button>
+    <Button fx:id="Submit" mnemonicParsing="false" text="Calculate" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="300.0" top="100.0" />
+      </GridPane.margin>
+    </Button>
+    <Label text="I/O Time" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="300.0" top="-350.0" />
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="process1IOtime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="300.0" top="-300.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process2IOtime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="300.0" top="-225.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process3IOtime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="300.0" top="-150.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process4IOtime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="300.0" top="-75.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process5IOtime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="300.0" />
+      </GridPane.margin>
+    </TextField>
+    <Label text="Burst Time 2" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="395.0" top="-350.0" />
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="process1BurstTime2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="410.0" top="-300.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process2BurstTime2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="410.0" top="-225.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process3BurstTime2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="410.0" top="-150.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process4BurstTime2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="410.0" top="-75.0" />
+      </GridPane.margin>
+    </TextField>
+    <TextField fx:id="process5BurstTime2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="410.0" />
+      </GridPane.margin>
+    </TextField>
+    <Button fx:id="getResponseTime" mnemonicParsing="false" text="Response Time" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets left="500.0" top="175.0" />
+      </GridPane.margin>
+    </Button>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>

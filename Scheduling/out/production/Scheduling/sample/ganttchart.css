@@ -1,0 +1,15 @@
+.one {
+    -fx-background-color:rgba(128,0,0,0.7);
+}
+.two {
+    -fx-background-color:rgba(128,128,128,0.7);
+}
+.three {
+    -fx-background-color:rgba(0,0,128,0.7);
+}
+.four {
+    -fx-background-color:rgba(0,128,128,0.7);
+}
+.five {
+    -fx-background-color:rgba(128,0,128,0.7);
+}
